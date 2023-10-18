@@ -1,53 +1,64 @@
+/* Default styles for larger screens */
 .maincards {
-    display: flex;
-    flex-direction: row;
-    
-    height:10rem;
-    margin-top: 1rem;
-    column-gap: 4rem;
-    margin-left: 2rem;
-  }
-  .card{
-    display: flex;
-    flex-direction: row;
-    border:0ch;
-    height:10rem;
-    width:14rem;
-    border-radius: 1rem;
-    color: black;
-    background-color: beige;
-  }
-  .cardicon1{
-    width:8rem;
-    height:8rem;
-    border-radius: 100%;
-    background-color: aquamarine;
-  }
-  .cardicon2{
-    width:8rem;
-    height:8rem;
-    border-radius: 100%;
-    background-color: rgb(225, 233, 230);
-  }
-  
-  .cardicon3{
-    width:8rem;
-    height:8rem;
-    border-radius: 100%;
-    background-color: rgb(73, 144, 120);
-  }
-  
-  .cardicon4{
-    width:8rem;
-    height:8rem;
-    border-radius: 100%;
-    background-color: rgb(201, 106, 163);
-  }
-  .cardInner{
-row-gap: 0rem;
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  margin-top: 1rem;
+  column-gap: 4rem;
+  margin-left: 2rem;
+}
 
-font-size: 0.8rem;
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  height: 10rem;
+  width: 14rem;
+  border-radius: 1rem;
+  color: black;
+  background-color: beige;
+}
+
+.cardicon1,
+.cardicon2,
+.cardicon3,
+.cardicon4 {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.cardicon1 {
+  background-color: aquamarine;
+}
+
+.cardicon2 {
+  background-color: rgb(225, 233, 230);
+}
+
+.cardicon3 {
+  background-color: rgb(73, 144, 120);
+}
+
+.cardicon4 {
+  background-color: rgb(201, 106, 163);
+}
+
+.cardInner {
+  row-gap: 0rem;
+  font-size: 0.8rem;
+}
+
+/* Media query for mobile devices (adjust max-width as needed) */
+@media (max-width: 322px) {
+  .maincards {
+    flex-direction: column; /* Stack cards vertically on mobile */
   }
-  
+
+  .card {
+    margin-bottom: 1rem; /* Add space between cards on mobile */
+  }
+}
+
   
  

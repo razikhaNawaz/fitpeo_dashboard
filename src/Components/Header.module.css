@@ -1,16 +1,34 @@
-.header{
+/* Default styles for larger screens */
+.header {
     display: flex;
     flex-direction: row;
-    border:0ch;
+    border: 0;
     justify-content: space-between;
-    width:80vw;
-    height:2rem;
+    width: 80vw;
+    height: 2rem;
     margin-left: 2rem;
     border-radius: 1rem;
     margin-top: 1rem;
-    color:black;
+    color: black;
     background-color: white;
-}
-.headerright{
+  }
+  
+  .headerright {
     margin-right: 5rem;
-}
+  }
+  
+  /* Media query for screens with a maximum width of 768px (adjust as needed for mobile devices) */
+  @media (max-width: 322px) {
+    .header {
+      /* Adjust the styles for mobile size */
+      width: 100%; /* Full width for mobile */
+      height: 1.5rem; /* Reduce height */
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+    }
+  
+    .headerright {
+      display: none; /* Hide .headerright on mobile */
+    }
+  }
+  
