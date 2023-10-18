@@ -3,6 +3,7 @@ import React from "react";
 import classes from "./Dashboard.module.css";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import Cards from "./Cards";
 
 const Dashboard = () => {
   return (
@@ -13,6 +14,7 @@ const Dashboard = () => {
       </div>
       <div className={classes.child2}>
         <Header />
+        <Cards />
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
             <br />
-            <br />
+            
         </ul>
         <div className='sidebar-title'>
             <div className='sidebar-brand'>
