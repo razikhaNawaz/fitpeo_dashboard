@@ -1,10 +1,13 @@
 
 import './App.css';
+import Dashboard from './Components/Dashboard';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Dashboard />
     </div>
   );
 }
